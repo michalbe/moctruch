@@ -1,6 +1,4 @@
-MOCTRUCH = function(element, options) {
-  var canvas = document.createElement('canvas');
-  var img = new Image();
+MOCTRUCH = function(callback, element, options) {
   var blur = options.blur || 5;
   var width = element.scrollWidth;
   var height = element.scrollHeight;
@@ -19,13 +17,38 @@ MOCTRUCH = function(element, options) {
           "</filter>" +
         "</defs>" +
       "<foreignObject width='100%' height='100%' filter='url(#f1)'>" +
-        html
+        html + 
       "</foreignObject>" +
     "</svg>";
     
     return svg;
   }
 
+  var createCanvas = function(blob, cb) {
+    console.log(blob);
+    var canvas = document.createElement('canvas');
+    var ctx = canvas.getContext('2d');
+    canvas.width = width;
+    canvas.height = height;
+    
+    var img = new Image();
+    blob = new Blob([blob], {type: "image/svg+xml;charset=utf-8"});
+    var url = window.URL.createObjectURL(blob);
+    img.onload = function() {
+        ctx.drawImage(img, 0, 0);
+        window.URL.revokeObjectURL(url);
+        cb(canvas);
+    };
+    img.src = url;
+  }
+  
+  createCanvas(createSVG(), callback);
 }
 
-MOCTRUCH(document.getElementById('container'), {blur: 5});
+MOCTRUCH(
+  function(cvs) { 
+    document.getElementById('output').appendChild(cvs);
+  },
+  document.getElementById('container'), 
+  {blur: 5}
+);
