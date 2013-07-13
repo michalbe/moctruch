@@ -15,4 +15,4 @@ Click here for the [DEMO](http://michalbe.github.io/moctruch/).
 Michal [@michalbe](http://twitter.com/michalbe) Budzynski, [13.07.2013](http://en.wikipedia.org/wiki/13_July)
 
 ===
-Moctruch is a creature from Polish mythology that urinates during major & important events and holidays, such as Christmas or Eastern, known from folk song - *"[Bóg się rodzi, Moctruch leje!](http://www.youtube.com/watch?v=Y2Ror4pIKp8)"*.
+Moctruch is a creature from Polish mythology that urinates during major & important events and holidays, such as Christmas or Eastern, known from the folk song - *"[Bóg się rodzi, Moctruch leje!](http://www.youtube.com/watch?v=Y2Ror4pIKp8)"*.
