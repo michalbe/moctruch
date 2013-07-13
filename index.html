@@ -1,15 +1,14 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      Moctruch
-    </title>
-    <link rel="stylesheet" href="style/main.css" />
-    <link rel="stylesheet" href="style/ios7.css" />
-  </head>
-  <body>
-    <div id="output" style="width: 320px;height: 550px"></div>
-    <div id="container" >
+<head>
+  <title>
+    MOCTRUCH
+  </title>
+  <link rel="stylesheet" href="style/main.css" />
+  <link rel="stylesheet" href="style/ios7.css" />
+</head>
+<body>
+  <div id="big-container">
+    <div id="container">
        <div class="home-screen wallpaper" style="display:block">
            <div class="apps">
                <i class="icon messages"><span class="count">1</span><span class="gradient"></span><b></b><span class="name">Messages</span></i>
@@ -58,6 +57,14 @@
            </div>
        </div>
     </div>
-    <script src="js/moctruch.js"></script>
-  </body>  
+  </div>
+  <div id="output" style="display:none;"></div>
+  <div id="controls">
+    <button id="blur">BLUR</button><br/>
+    <button id="unblur">UNBLUR</button><br/>
+    <button id="animStart">ANIMATION START</button><br/>
+    <button id="animStop">ANIMATION STOP</button><br/>  
+  </div>
+  <script src="js/moctruch.js"></script>
+</body>
 </html>

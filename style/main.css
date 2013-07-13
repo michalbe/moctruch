@@ -1,11 +1,47 @@
-body {
-  text-align: center;
-}
-
 #container,
 #output {
   width: 320px;
   height: 560px;
   border: 1px #000 solid;
-  margin: auto;
+  left: 50%;
+  margin-left: -160px;
+  position: absolute;
+  text-align: center;
+}
+
+#container {
+  z-index: 1;
+}
+#output {
+  z-index: 2;
+}
+
+.anim .icon {
+  -moz-animation: antoniMacierewicz 0.8s linear 0s infinite;
+  animation: antoniMacierewicz 0.8s linear 0s infinite;
+  -webkit-animation: antoniMacierewicz 0.8s linear 0s infinite;
+}
+
+@-webkit-keyframes antoniMacierewicz {
+    0% { transform: rotate(0deg) }
+    50% { transform: rotate(180deg) }
+    100% { transform: rotate(0) }
+}
+
+@-moz-keyframes antoniMacierewicz {
+    0% { transform: rotate(0) }
+    50% { transform: rotate(180deg) }
+    100% { transform: rotate(0) }
+}
+
+@keyframes antoniMacierewicz {
+    0% { transform: rotate(0) }
+    50% { transform: rotate(180deg) }
+    100% { transform: rotate(0) }
+}
+
+button {
+  width: 200px;
+  height: 30px;
+  margin: 5px;
 }
