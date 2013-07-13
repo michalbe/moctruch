@@ -10,7 +10,7 @@ Moctruch
 ====
 Moctruch is an experiment inspired by [JS NEWS group on Facebook](https://www.facebook.com/groups/217169631654737/permalink/566491106722586/) in which I tried to emulate iOS7 like blurred overlay in HTML5. It reacts on DOM changes of the layers below (more or less). Firefox only so far. iOS7 template stolen from [Recombu](http://recombu.com/mobile/interactive/iphone-5s-ios7-concept/).
 
-[Hosted demo](http://michalbe.github.io/moctruch/)
+Click here for the [DEMO](http://michalbe.github.io/moctruch/).
 
 Michal [@michalbe](http://twitter.com/michalbe) Budzynski, [13.07.2013](http://en.wikipedia.org/wiki/13_July)
 
